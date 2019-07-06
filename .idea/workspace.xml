@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f4fa52e2-b4fc-46e1-adea-bdb030da3dc9" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="easychat@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="easychat@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="easychat@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="easychat: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/netty/HeartBeatHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="806">
+              <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/netty/WebSocketSeverInitializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/netty/ChatHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/utils/MyMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/config/NettyBooter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/netty/WebSocketServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/idworker/WorkerIdStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/utils/idworker/strategy/DefaultRandomCodeStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/utils/JsonUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/utils/IMoocJSONResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/utils/ResponseResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/vo/UsersVo.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/utils/FileUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/config/ComponetImport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/bo/UsersBo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/enums/PreSearchFriends.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/enums/PreSearchFriendsEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/vo/FriendRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/vo/FriendRequestVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/enums/OperaFriendRequestTypeEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/enums/OperatorFriendRequestTypeEnum.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jmx/UserServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/vo/MyFriendsVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/netty/ChatRoomHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/enums/DataContent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/pojo/ChatMsg.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/netty/DataContent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/enums/MsgActionEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/utils/SpringUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/mapper/UsersMapperCustom.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/UsersMapperCustom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/netty/UserChannelRelation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/EasyChatApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/netty/ChatData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/service/UsersService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/service/impl/UsersServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jmx/SidTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/netty/HeartBeatHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/netty/WebSocketSeverInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/netty/ChatHandler.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Runtime\repository" />
+        <option name="mavenHome" value="D:/Runtime/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\Runtime\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-5" />
+    <option name="y" value="-5" />
+    <option name="width" value="1370" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jmx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jmx" type="462c0819:PsiDirectoryNode" />
+              <item name="bo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jmx" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jmx" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jmx" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jmx" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jmx" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jmx" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jmx" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jmx" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jmx" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapper" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.28654972" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jmx.utils" />
+      <recent name="com.jmx.enums" />
+      <recent name="com.jmx.netty" />
+      <recent name="com.jmx.mapper" />
+      <recent name="com.jmx.vo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WorkSpace\IdeaSpace\jmx-easychat-netty\src\main\resources\mapper" />
+      <recent name="D:\WorkSpace\IdeaSpace\jmx-easychat-netty\src\main\java\com\jmx\utils" />
+      <recent name="D:\WorkSpace\IdeaSpace\jmx-easychat-netty\src\main\java\org\n3r\idworker" />
+      <recent name="D:\WorkSpace\IdeaSpace\jmx-easychat-netty\src\main\java" />
+      <recent name="D:\WorkSpace\IdeaSpace\jmx-easychat-netty\src\main\java\com\jmx\netty" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.EasyChatApplication">
+    <configuration name="SidTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jmx-easychat-netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jmx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jmx" />
+      <option name="MAIN_CLASS_NAME" value="com.jmx.SidTest" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SidTest.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jmx-easychat-netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jmx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jmx" />
+      <option name="MAIN_CLASS_NAME" value="com.jmx.SidTest" />
+      <option name="METHOD_NAME" value="test03" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jmx-easychat-netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jmx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jmx" />
+      <option name="MAIN_CLASS_NAME" value="com.jmx.UserServiceTest" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EasyChatApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="jmx-easychat-netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jmx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jmx.EasyChatApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.SidTest.test01" />
+      <item itemvalue="JUnit.UserServiceTest.test01" />
+      <item itemvalue="JUnit.SidTest.test03" />
+      <item itemvalue="Spring Boot.EasyChatApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.EasyChatApplication" />
+        <item itemvalue="JUnit.SidTest.test03" />
+        <item itemvalue="JUnit.UserServiceTest.test01" />
+        <item itemvalue="JUnit.SidTest.test01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f4fa52e2-b4fc-46e1-adea-bdb030da3dc9" name="Default Changelist" comment="" />
+      <created>1561692729573</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561692729573</updated>
+      <workItem from="1561692734593" duration="11994000" />
+      <workItem from="1561741433055" duration="26900000" />
+      <workItem from="1562028540872" duration="49256000" />
+      <workItem from="1562384436822" duration="599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SidTest_test01 - 2019.06.29 at 08h 20m 46s.xml">
+      <configuration name="SidTest.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest_test01 - 2019.07.02 at 13h 47m 37s.xml">
+      <configuration name="UserServiceTest.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest_test01 - 2019.07.02 at 13h 54m 34s.xml">
+      <configuration name="UserServiceTest.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SidTest_test03 - 2019.07.05 at 12h 38m 18s.xml">
+      <configuration name="SidTest.test03" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SidTest_test03 - 2019.07.05 at 12h 38m 33s.xml">
+      <configuration name="SidTest.test03" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SidTest_test03 - 2019.07.05 at 12h 39m 02s.xml">
+      <configuration name="SidTest.test03" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SidTest_test03 - 2019.07.05 at 12h 39m 20s.xml">
+      <configuration name="SidTest.test03" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="88749000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21782842" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.535503" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39846155" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3276923" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32923076" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32923076" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Tail" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Mybatis datasource" order="6" side_tool="true" />
+      <window_info anchor="right" id="Database" order="7" weight="0.3297587" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.3297587" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://D:/Runtime/repository/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="436" selection-start-line="436" selection-end-line="436" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="438" selection-start-line="438" selection-end-line="438" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.21/tomcat-embed-websocket-9.0.21.jar!/org/apache/tomcat/websocket/server/WsFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/filter/RequestContextFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/filter/FormContentFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/filter/HiddenHttpMethodFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/filter/CharacterEncodingFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21.jar!/org/apache/catalina/core/StandardWrapperValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="342" selection-start-line="342" selection-end-line="342" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21.jar!/org/apache/catalina/core/StandardContextValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21.jar!/org/apache/catalina/authenticator/AuthenticatorBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="317" selection-start-line="317" selection-end-line="317" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21.jar!/org/apache/catalina/core/StandardHostValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21.jar!/org/apache/catalina/valves/ErrorReportValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21.jar!/org/apache/catalina/core/StandardEngineValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21.jar!/org/apache/coyote/http11/Http11Processor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="254" selection-start-line="254" selection-end-line="254" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21.jar!/org/apache/catalina/connector/CoyoteAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="436" selection-start-line="436" selection-end-line="436" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final-sources.jar!/io/netty/handler/codec/ByteToMessageDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="289" selection-start-line="289" selection-end-line="289" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final-sources.jar!/io/netty/channel/DefaultChannelPipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="965" selection-start-line="965" selection-end-line="965" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final-sources.jar!/io/netty/channel/nio/AbstractNioByteChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="185" selection-start-line="185" selection-end-line="185" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final-sources.jar!/io/netty/util/concurrent/ScheduledFutureTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#1342#1343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final-sources.jar!/io/netty/util/concurrent/AbstractScheduledEventExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+          <folding>
+            <element signature="e#1762#1763#0" expanded="true" />
+            <element signature="e#1815#1816#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final-sources.jar!/io/netty/channel/nio/NioEventLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="524" selection-start-line="524" selection-end-line="524" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final.jar!/io/netty/util/internal/shaded/org/jctools/queues/LinkedArrayQueueUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final.jar!/io/netty/util/internal/shaded/org/jctools/util/UnsafeRefArrayAccess.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final.jar!/io/netty/util/internal/shaded/org/jctools/queues/BaseMpscLinkedArrayQueueProducerFields.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#620#621#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final.jar!/io/netty/util/internal/shaded/org/jctools/queues/BaseMpscLinkedArrayQueue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final-sources.jar!/io/netty/channel/SingleThreadEventLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+          <folding>
+            <element signature="e#4882#4883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final-sources.jar!/io/netty/util/concurrent/SingleThreadEventExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="374" selection-start-line="374" selection-end-line="374" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final-sources.jar!/io/netty/handler/codec/MessageToMessageDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final-sources.jar!/io/netty/handler/codec/http/websocketx/Utf8FrameValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final-sources.jar!/io/netty/handler/codec/http/websocketx/WebSocketServerProtocolHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
+          <folding>
+            <element signature="e#8232#8810#0" expanded="true" />
+            <element signature="e#8809#8810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final-sources.jar!/io/netty/channel/ChannelInboundHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final-sources.jar!/io/netty/channel/AbstractChannelHandlerContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="347" selection-start-line="347" selection-end-line="347" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Runtime/repository/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final-sources.jar!/io/netty/channel/SimpleChannelInboundHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1900">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UsersMapperCustom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/mapper/UsersMapperCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/vo/FriendRequestVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/vo/MyFriendsVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/netty/ChatData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/pojo/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/pojo/ChatMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/service/UsersService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="103" column="16" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/service/impl/UsersServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="277" column="20" lean-forward="true" selection-start-line="277" selection-start-column="20" selection-end-line="277" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="265" column="43" selection-start-line="265" selection-start-column="31" selection-end-line="265" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jmx/SidTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/netty/HeartBeatHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/netty/WebSocketSeverInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/netty/ChatHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28654972" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28654972" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>jmx-easychat-netty</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28654972" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28654972" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28654972" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

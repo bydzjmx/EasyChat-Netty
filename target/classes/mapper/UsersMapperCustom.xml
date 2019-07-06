@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmx.mapper.UsersMapperCustom">
+  
+  <select id="queryFriendRequestList" resultType="com.jmx.vo.FriendRequestVo" parameterType="String">
+
+    SELECT
+      u.id as senderId,
+      u.nickname as senderNickname,
+      u.face_image as senderFaceImage,
+      u.username as senderUsername
+    FROM
+      friends_request fr
+    LEFT JOIN users u ON fr.send_user_id = u.id
+    WHERE
+      fr.accept_user_id = #{acceptUserId}
+
+
+  </select>
+
+  <select id="queryMyFriends" resultType="com.jmx.vo.MyFriendsVo" parameterType="String">
+    SELECT
+      u.id as friendId,
+      u.username as friendNickname,
+      u.face_image as friendFaceImage,
+      u.nickname as friendUsername
+    FROM
+      my_friends mf
+    LEFT JOIN users u
+    ON mf.my_friend_user_id = u.id
+    WHERE
+      my_user_id = #{myUserId}
+
+  </select>
+
+  <!--批量更新消息为已签收-->
+  <update id="updateSignMsg">
+    UPDATE chat_msg SET sign_flag = 1 WHERE id in
+    <foreach collection="list" item="item" index="index" open="(" separator="," close=")">
+        #{item}
+    </foreach>
+
+  </update>
+</mapper>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="addSerializeUid" value="true" />
+        <option name="commonMapperBaseClass" value="com.jmx.utils.MyMapper" />
+        <option name="generateService" value="true" />
+        <option name="generateServiceInterface" value="true" />
+        <option name="javaMapperPackage" value="com.jmx.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/src/main/java" />
+        <option name="javaModelPackage" value="com.jmx.pojo" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="jmx-easychat-netty" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="jmx-easychat-netty">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.jmx.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/src/main/java" />
+                  <option name="javaModelPacakge" value="com.jmx.pojo" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/src/main/java" />
+                  <option name="javaServiceInterfacePackage" value="com.jmx.service" />
+                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/src/main/java" />
+                  <option name="javaServicePackage" value="com.jmx.service.impl" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/src/main/java" />
+                  <option name="xmlPackage" value="mapper" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="easychat:chat_msg">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="ChatMsg" />
+                  <option name="moduleName" value="jmx-easychat-netty" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="easychat:friends_request">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="FriendsRequest" />
+                  <option name="moduleName" value="jmx-easychat-netty" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="easychat:my_friends">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="MyFriends" />
+                  <option name="moduleName" value="jmx-easychat-netty" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="easychat:users">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="Users" />
+                  <option name="moduleName" value="jmx-easychat-netty" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="useCommonMapper" value="true" />
+        <option name="useLomBokOnModel" value="true" />
+        <option name="xmlMapperPackage" value="mapper" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/src/main/resources" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

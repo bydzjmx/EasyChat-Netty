@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmx.mapper.MyFriendsMapper">
+  <resultMap id="BaseResultMap" type="com.jmx.pojo.MyFriends">
+    <!--@mbg.generated generated on Fri Jun 28 16:29:40 CST 2019.-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="my_user_id" jdbcType="VARCHAR" property="myUserId" />
+    <result column="my_friend_user_id" jdbcType="VARCHAR" property="myFriendUserId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Fri Jun 28 16:29:40 CST 2019.-->
+    id, my_user_id, my_friend_user_id
+  </sql>
+</mapper>

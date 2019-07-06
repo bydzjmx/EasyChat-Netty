@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmx.mapper.UsersMapper">
+  <resultMap id="BaseResultMap" type="com.jmx.pojo.Users">
+    <!--@mbg.generated generated on Fri Jun 28 16:29:44 CST 2019.-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="face_image" jdbcType="VARCHAR" property="faceImage" />
+    <result column="face_image_big" jdbcType="VARCHAR" property="faceImageBig" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="qrcode" jdbcType="VARCHAR" property="qrcode" />
+    <result column="cid" jdbcType="VARCHAR" property="cid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Fri Jun 28 16:29:44 CST 2019.-->
+    id, username, `password`, face_image, face_image_big, nickname, qrcode, cid
+  </sql>
+</mapper>
