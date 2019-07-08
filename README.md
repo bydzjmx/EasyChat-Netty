@@ -2,7 +2,7 @@
 
 一款使用Netty+SpringBoot+MUI+HTML5+制作的仿微信的聊天APP，包括聊天，通讯录，发现，个人等模块。
 
-前端页面：https://github.com/bydzjmx/EasyChat
+此工程为后端工程，前端工程参照：https://github.com/bydzjmx/EasyChat
 
 ## 功能说明
 
