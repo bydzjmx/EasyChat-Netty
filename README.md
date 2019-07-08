@@ -32,6 +32,7 @@
 4. FastDFS
 5. 个推
 6. Google Zxing
+7. IdWorker
 
 # 部署
 
