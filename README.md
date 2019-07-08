@@ -46,7 +46,8 @@
    2. serverUrl
    3. imgServerUrl
 4. 后端工程打成jar包运行
-5. 前端项目使用HBuilder打包成ipa/apk，在相应系统上运行。也可以用HBuilder运行到手机端或模拟器调试。
+5. 前端项目使用HBuilder打包成ipa/apk，在相应系统上运行。也可以用HBuilder运行到手机端或模拟器调试
+6. 首页登录和注册功能合并，未注册的用户名在键入后自动注册登录
 
 ## 说明
 
