@@ -7,22 +7,94 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4fa52e2-b4fc-46e1-adea-bdb030da3dc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/jmx_easychat_netty_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jmx/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jmx/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jmx/netty/ChatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jmx/netty/ChatHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jmx/netty/WebSocketSeverInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jmx/netty/WebSocketSeverInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jmx/service/impl/UsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jmx/service/impl/UsersServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jmx/utils/QRCodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jmx/utils/QRCodeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/jmx-easychat-netty.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jmx/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/netty/ChatHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jmx/netty/ChatHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/netty/WebSocketSeverInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jmx/netty/WebSocketSeverInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/service/impl/UsersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jmx/service/impl/UsersServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/utils/QRCodeUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jmx/utils/QRCodeUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/EasyChatApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/bo/UsersBo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/config/ComponetImport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/config/NettyBooter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/enums/MsgActionEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/enums/OperatorFriendRequestTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/enums/PreSearchFriendsEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/mapper/ChatMsgMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/mapper/FriendsRequestMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/mapper/MyFriendsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/mapper/UsersMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/mapper/UsersMapperCustom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/netty/ChatData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/netty/ChatHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/netty/ChatRoomHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/netty/DataContent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/netty/HeartBeatHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/netty/UserChannelRelation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/netty/WebSocketServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/netty/WebSocketServer$SingletonWSSever.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/netty/WebSocketServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/netty/WebSocketSeverInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/pojo/ChatMsg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/pojo/FriendsRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/pojo/MyFriends.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/pojo/Users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/push/AppPush.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/push/AsyncCenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/service/ChatMsgService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/service/FriendsRequestService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/service/MyFriendsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/service/UsersService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/service/impl/ChatMsgServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/service/impl/FriendsRequestServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/service/impl/MyFriendsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/service/impl/UsersServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/utils/FastDFSClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/utils/FileUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/utils/JsonUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/utils/MD5Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/utils/MyMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/utils/QRCodeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/utils/ResponseResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/utils/SpringUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/vo/FriendRequestVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/vo/MyFriendsVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jmx/vo/UsersVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ChatMsgMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/FriendsRequestMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/MyFriendsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UsersMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UsersMapperCustom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/DayCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/Id.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/IdWorker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/InvalidSystemClock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/RandomCodeStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/Sid$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/Sid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/WorkerIdStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/strategy/DayPrefixRandomCodeStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/strategy/DefaultRandomCodeStrategy$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/strategy/DefaultRandomCodeStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/strategy/DefaultWorkerIdStrategy$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/strategy/DefaultWorkerIdStrategy$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/strategy/DefaultWorkerIdStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/strategy/FileLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/utils/HttpReq.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/utils/IPv4Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/utils/Ip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/utils/Props$Silent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/utils/Props.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/utils/Serializes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/utils/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jmx-easychat-netty-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jmx-easychat-netty-1.0-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jmx/GetuiTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jmx/SidTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jmx/UserServiceTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -88,11 +160,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/netty/ChatHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2184">
-              <caret line="107" column="85" selection-start-line="107" selection-start-column="85" selection-end-line="107" selection-end-column="85" />
+            <state relative-caret-position="-1300">
+              <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/netty/HeartBeatHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,7 +262,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jmx/netty/ChatData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jmx/service/UsersService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jmx/SidTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jmx/netty/HeartBeatHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jmx/netty/WebSocketSeverInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jmx/utils/QRCodeUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jmx/utils/AppPush.java" />
@@ -192,6 +275,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jmx/push/AppPush.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jmx/netty/ChatHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jmx/netty/HeartBeatHandler.java" />
       </list>
     </option>
   </component>
@@ -254,7 +338,7 @@
             <path>
               <item name="jmx-easychat-netty" type="b2602c69:ProjectViewProjectNode" />
               <item name="jmx-easychat-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -423,7 +507,7 @@
       <workItem from="1562515253379" duration="26000" />
       <workItem from="1562515342265" duration="234000" />
       <workItem from="1562515599007" duration="5568000" />
-      <workItem from="1562549490176" duration="11575000" />
+      <workItem from="1562549490176" duration="11920000" />
     </task>
     <servers />
   </component>
@@ -460,7 +544,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122021000" />
+    <option name="totallyTimeSpent" value="122366000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -472,10 +556,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23190348" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23190348" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -485,7 +568,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17384616" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17384616" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39846155" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -502,7 +585,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.20241287" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.20241287" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Mybatis datasource" order="6" side_tool="true" />
@@ -684,16 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/netty/HeartBeatHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -906,8 +979,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/netty/ChatHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2184">
-          <caret line="107" column="85" selection-start-line="107" selection-start-column="85" selection-end-line="107" selection-end-column="85" />
+        <state relative-caret-position="-1300">
+          <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jmx/netty/HeartBeatHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
