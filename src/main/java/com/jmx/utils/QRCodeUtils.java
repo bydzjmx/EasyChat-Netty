@@ -14,6 +14,10 @@ import java.io.File;
 import java.nio.file.Path;
 import java.util.HashMap;
 
+/**
+ * 二维码相关的工具类
+ */
+
 @Component
 public class QRCodeUtils {
 	

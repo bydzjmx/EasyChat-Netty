@@ -10,6 +10,8 @@ import com.jmx.pojo.ChatMsg;
 import com.jmx.pojo.FriendsRequest;
 import com.jmx.pojo.MyFriends;
 import com.jmx.pojo.Users;
+import com.jmx.push.AppPush;
+import com.jmx.push.AsyncCenter;
 import com.jmx.service.UsersService;
 import com.jmx.utils.FastDFSClient;
 import com.jmx.utils.FileUtils;
@@ -28,6 +30,7 @@ import org.springframework.web.multipart.MultipartFile;
 import tk.mybatis.mapper.entity.Example;
 
 import javax.annotation.Resource;
+import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 import java.util.List;
@@ -35,29 +38,27 @@ import java.util.List;
 @Service
 public class UsersServiceImpl implements UsersService{
 
-    @Autowired
-    private Sid sid;
+    private final Sid sid;
+    private final UsersMapper usersMapper;
+    private final MyFriendsMapper myFriendsMapper;
+    private final QRCodeUtils qrCodeUtils;
+    private final FastDFSClient fastDFSClient;
+    private final FriendsRequestMapper friendsRequestMapper;
+    private final UsersMapperCustom usersMapperCustom;
+    private final ChatMsgMapper chatMsgMapper;
+    private final AsyncCenter asyncCenter;
 
-    @Resource
-    private UsersMapper usersMapper;
-
-    @Autowired
-    private MyFriendsMapper myFriendsMapper;
-
-    @Autowired
-    private QRCodeUtils qrCodeUtils;
-
-    @Autowired
-    private FastDFSClient fastDFSClient;
-
-    @Autowired
-    private FriendsRequestMapper friendsRequestMapper;
-
-    @Autowired
-    private UsersMapperCustom usersMapperCustom;
-
-    @Autowired
-    private ChatMsgMapper chatMsgMapper;
+    public UsersServiceImpl(Sid sid, UsersMapper usersMapper, MyFriendsMapper myFriendsMapper, QRCodeUtils qrCodeUtils, FastDFSClient fastDFSClient, FriendsRequestMapper friendsRequestMapper, UsersMapperCustom usersMapperCustom, ChatMsgMapper chatMsgMapper, AsyncCenter asyncCenter) {
+        this.sid = sid;
+        this.usersMapper = usersMapper;
+        this.myFriendsMapper = myFriendsMapper;
+        this.qrCodeUtils = qrCodeUtils;
+        this.fastDFSClient = fastDFSClient;
+        this.friendsRequestMapper = friendsRequestMapper;
+        this.usersMapperCustom = usersMapperCustom;
+        this.chatMsgMapper = chatMsgMapper;
+        this.asyncCenter = asyncCenter;
+    }
 
     //判断用户名是否存在
     @Transactional(propagation = Propagation.SUPPORTS)
@@ -67,7 +68,7 @@ public class UsersServiceImpl implements UsersService{
         users.setUsername(username);
         Users user = usersMapper.selectOne(users);
         //返回布尔值
-        return user == null? false : true;
+        return user != null;
     }
 
     //用户登录逻辑,返回Users
@@ -79,8 +80,7 @@ public class UsersServiceImpl implements UsersService{
         //进行用户名和密码比对
         criteria.andEqualTo("username",username).andEqualTo("password",pwd);
         //进行查询
-        Users result = usersMapper.selectOneByExample(example);
-        return result;
+        return usersMapper.selectOneByExample(example);
     }
 
     //用户注册,将用户输入的账号和密码,当做新用户信息注册
@@ -91,11 +91,15 @@ public class UsersServiceImpl implements UsersService{
         String id = sid.nextShort();
         //2. 填充用户信息
         user.setId(id);
-        user.setFaceImage("");
-        user.setFaceImageBig("");
+        //为用户设置默认头像
+        user.setFaceImage("M00/00/00/wKgABF0isKOAMcn1AAYEqr08yNY440_80x80.png");
+        user.setFaceImageBig("M00/00/00/wKgABF0isKOAMcn1AAYEqr08yNY440.png");
         //3. 注册时为用户生成唯一的二维码
         //3.1 定义二维码生成路径
-        String urlLocalPath = "d:\\" + user.getId() + "qrcode.png";
+        //win下的临时目录
+        //String urlLocalPath = "d:\\" + user.getId() + "qrcode.png";
+        String urlLocalPath = File.separator + "home" + File.separator + "tempImg"
+                              + File.separator + user.getId() + "qrcode.png";
         String qrcodeContent = "easyChat_qrcode:" + user.getUsername();
         //3.2 通过工具生成二维码
         qrCodeUtils.createQRCode(urlLocalPath,qrcodeContent);
@@ -121,8 +125,7 @@ public class UsersServiceImpl implements UsersService{
     public Users updateUsersInfo(Users users) {
         usersMapper.updateByPrimaryKeySelective(users);
         //查询最新的用户信息，并返回
-        Users newUserInfo = queryUsersInfo(users.getId());
-        return newUserInfo;
+        return queryUsersInfo(users.getId());
     }
 
     //搜索好友的前置
@@ -155,15 +158,15 @@ public class UsersServiceImpl implements UsersService{
         }
     }
 
+    //通过用户名查询用户信息
     @Transactional(propagation = Propagation.REQUIRED)
     @Override
     public Users queryUserByUsername(String username) {
         Example example = new Example(Users.class);
         Example.Criteria criteria = example.createCriteria();
         criteria.andEqualTo("username",username);
-        Users users = usersMapper.selectOneByExample(example);
         //如果未找到,返回null,找到了, 返回user对象
-        return users == null? null : users;
+        return usersMapper.selectOneByExample(example);
     }
 
     //发送添加好友请求
@@ -187,15 +190,15 @@ public class UsersServiceImpl implements UsersService{
 
             friendsRequestMapper.insert(friendsRequest);
         }
-
+        //异步发送推送消息
+        asyncCenter.sendPush("好友请求","您收到新的好友请求",users.getCid());
     }
 
     //查询添加者列表
     @Transactional(propagation = Propagation.SUPPORTS)
     @Override
     public List<FriendRequestVo> queryFriendRequestList(String acceptUserId) {
-        List<FriendRequestVo> requestVos = usersMapperCustom.queryFriendRequestList(acceptUserId);
-        return requestVos;
+        return usersMapperCustom.queryFriendRequestList(acceptUserId);
     }
 
     //删除好友添加请求
@@ -207,8 +210,7 @@ public class UsersServiceImpl implements UsersService{
         criteria.andEqualTo("sendUserId",senderId);
         criteria.andEqualTo("acceptUserId",acceptUserId);
         //写入数据库
-        int i = friendsRequestMapper.deleteByExample(example);
-        System.out.println(i);
+        friendsRequestMapper.deleteByExample(example);
     }
 
     //通过好友添加请求
@@ -236,9 +238,7 @@ public class UsersServiceImpl implements UsersService{
     @Transactional(propagation = Propagation.SUPPORTS)
     @Override
     public List<MyFriendsVo> queryMyFriends(String userId) {
-        List<MyFriendsVo> myFriends = usersMapperCustom.queryMyFriends(userId);
-        System.out.println(myFriends);
-        return myFriends;
+        return usersMapperCustom.queryMyFriends(userId);
     }
 
     //保存客户端发送过来的消息到数据库
@@ -280,8 +280,7 @@ public class UsersServiceImpl implements UsersService{
 
     //查询最新的用户信息
     private Users queryUsersInfo(String userId){
-        Users users = usersMapper.selectByPrimaryKey(userId);
-        return users;
+        return usersMapper.selectByPrimaryKey(userId);
     }
 
     //检查添加好友请求数据库中是否有相同记录
@@ -292,7 +291,7 @@ public class UsersServiceImpl implements UsersService{
         criteria.andEqualTo("acceptUserId",friendId);
         FriendsRequest friendsRequest = friendsRequestMapper.selectOneByExample(example);
         //查不到，表示可以添加，返回true。否则返回false；
-        return friendsRequest == null? true : false;
+        return friendsRequest == null;
     }
 
     //保存好友信息

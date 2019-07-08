@@ -20,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -32,11 +33,14 @@ import java.util.List;
 @RequestMapping("user")
 public class UserController {
 
-    @Autowired
-    private UsersService usersService;
+    private final UsersService usersService;
+    private final FastDFSClient fastDFSClient;
 
     @Autowired
-    private FastDFSClient fastDFSClient;
+    public UserController(UsersService usersService, FastDFSClient fastDFSClient) {
+        this.usersService = usersService;
+        this.fastDFSClient = fastDFSClient;
+    }
 
     /**
      * 判断登录还是注册, User中包含用户名和密码
@@ -51,8 +55,8 @@ public class UserController {
             return ResponseResult.errorMsg("用户名或密码不能为空");
         }
         //2. service中查询,判断用户名是否存在,如果存在则登录,否则转为注册
-       boolean usernameIsExist =  usersService.queryUsernameIsExist(user.getUsername());
-        Users result = null;
+        boolean usernameIsExist =  usersService.queryUsernameIsExist(user.getUsername());
+        Users result;
         if(usernameIsExist){
             //用户名存在,进行登录逻辑,传入用户名和密码,result有用户信息
             result  = usersService.queryUserForLogin(user.getUsername(), MD5Utils.getMD5Str(user.getPassword()));
@@ -64,6 +68,7 @@ public class UserController {
             //用户名不存在,进入注册逻辑,传入User信息
             user.setPassword(MD5Utils.getMD5Str(user.getPassword()));
             user.setNickname(user.getUsername());
+            user.setCid(user.getCid());
             result = usersService.saveUser(user);
             if(result == null){
                 //注册失败
@@ -80,7 +85,7 @@ public class UserController {
      * 用户上传头像逻辑
      * 1. 用户上传头像为Base64格式的字符串
      * 2. 将字符串转换为文件对象
-     * 3. 上传到fastdfs
+     * 3. 上传到fastDFS
      * 4. 更新数据库的信息
      * @param usersBo
      * @return
@@ -89,14 +94,19 @@ public class UserController {
     public ResponseResult uploadFaceBase64(@RequestBody UsersBo usersBo) throws Exception{
         //1. 将字符串转换为文件对象
         String base64Data = usersBo.getFaceData();
-        String userFacePath = "d:\\" + usersBo.getUserId() + "userface64.png";
+        //win下的临时目录
+        //String userFacePath = "d:\\" + usersBo.getUserId() + "userFace64.png";
+        String userFacePath = File.separator + "home" + File.separator + "tempImg"
+                + File.separator + usersBo.getUserId() + "userFace64.png";
         FileUtils.base64ToFile(userFacePath,base64Data);
 
-        //2. 将文件转换为Multipart格式，上传到fastdfs
+        //2. 将文件转换为Multipart格式，上传到fastDfs
         MultipartFile faceFile = FileUtils.fileToMultipart(userFacePath);
-        //2.1 上传后返回文件名 ( "fdsdfsdddddff.png")
-        String url = fastDFSClient.uploadBase64(faceFile);
-        System.out.println(url);
+        String url = "";
+        //2.1 上传后返回文件名
+        if (faceFile != null){
+            url = fastDFSClient.uploadBase64(faceFile);
+        }
 
         //3. 获取缩略图的url _80x80.png
         String thumb = "_80x80.";

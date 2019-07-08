@@ -1,6 +1,10 @@
 package com.jmx.netty;
 
 import com.jmx.enums.MsgActionEnum;
+import com.jmx.mapper.UsersMapper;
+import com.jmx.pojo.Users;
+import com.jmx.push.AppPush;
+import com.jmx.push.AsyncCenter;
 import com.jmx.service.UsersService;
 import com.jmx.service.impl.UsersServiceImpl;
 import com.jmx.utils.JsonUtils;
@@ -14,6 +18,8 @@ import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import io.netty.util.concurrent.GlobalEventExecutor;
 import net.minidev.json.JSONUtil;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -26,7 +32,7 @@ import java.util.List;
  *
  */
 public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>{
-
+    
     //定义channel集合,管理channel,传入全局事件执行器
     public static ChannelGroup users = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
 
@@ -61,7 +67,7 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
 //            UserChannelRelation.output();
 
         }else if(action == MsgActionEnum.CHAT.type){
-            System.out.println("进行消息发送逻辑");
+            //System.out.println("进行消息发送逻辑");
             //2.2 聊天类型的消息，此时需要把聊天记录保存到数据库，同时添加为未读状态
             ChatData chatData = content.getChatData();
             String msgText = chatData.getMsg();
@@ -70,7 +76,7 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
             //2.2.2保存到数据库中
             //2.2.3 手动获取userService对象
             UsersServiceImpl service = (UsersServiceImpl)SpringUtil.getBean("usersServiceImpl");
-
+            UsersMapper usersMapper = (UsersMapper) SpringUtil.getBean("usersMapper");
             String msgId = service.saveMsg(chatData);
             //2.2.4 设置msgId推回前台
             chatData.setMsgId(msgId);
@@ -78,21 +84,28 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
             DataContent dataContent = new DataContent();
             dataContent.setChatData(chatData);
 
+            //获取发信和收信者昵称
+            Users sender = usersMapper.selectByPrimaryKey(senderId);
+            Users receiver = usersMapper.selectByPrimaryKey(receiverId);
+
             //2.3 发送消息,根据channel进行消息推送(接收方),因为receiverId是唯一的,所以只有接收方能收到消息
             Channel receiveChannel = UserChannelRelation.get(receiverId);
             if (receiveChannel == null){
                 //TODO 用户不在线, 推送消息到用户APP, (JPush,个推,小米推送等)
+                AppPush.sendPush(sender.getNickname(),msgText,receiver.getCid());
                 System.out.println("接收方不在线,请稍候重试");
             }else{
                 //从ChannelGroup中去查找对应的channel是否存在
                 //System.out.println("接收方在线");
-                Channel findChannel = users.find(receiveChannel.id());
+                Channel findChannel = ChatHandler.users.find(receiveChannel.id());
                 if(findChannel != null){
                     //用户在线, 发送chatData回客户端接收
-                    receiveChannel.writeAndFlush(new TextWebSocketFrame(JsonUtils.objectToJson(dataContent)));
+                    receiveChannel.writeAndFlush(
+                            new TextWebSocketFrame(
+                                    JsonUtils.objectToJson(dataContent)));
                 }else {
-                    //用户离线
-                    //TODO 推送消息
+                    //用户离线,推送消息
+                    AppPush.sendPush(sender.getNickname(),msgText,receiver.getCid());
                 }
             }
 
