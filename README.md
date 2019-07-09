@@ -12,6 +12,9 @@
 个人界面提供头像修改、昵称修改等功能。
 使用个推进行APP端消息的推送，使用前后端心跳保持WebSocket连接。
 
+## API文档
+使用ShowDoc生成项目文档，文档地址：https://www.showdoc.cc/easychat
+
 # APP截图
 <img src="https://github.com/bydzjmx/EasyChat-Netty/blob/master/images/screenshots/login.jpg" width="20%" height="20%"><img src="https://github.com/bydzjmx/EasyChat-Netty/blob/master/images/screenshots/chatList.jpg" width="20%" height="20%"><img src="https://github.com/bydzjmx/EasyChat-Netty/blob/master/images/screenshots/contact.jpg" width="20%" height="20%"><img src="https://github.com/bydzjmx/EasyChat-Netty/blob/master/images/screenshots/discovery.jpg" width="20%" height="20%"><img src="https://github.com/bydzjmx/EasyChat-Netty/blob/master/images/screenshots/userInfo.jpg" width="20%" height="20%">
 
