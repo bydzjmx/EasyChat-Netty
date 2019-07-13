@@ -45,9 +45,9 @@
    2. 数据库datasource配置
    3. FastDFS的tracker-list配置
 3. 修改前端工程中app.js的三个服务器地址
-   1. nettyServerUrl
-   2. serverUrl
-   3. imgServerUrl
+   1. nettyServerUrl-----netty服务器地址
+   2. serverUrl------后端服务器地址
+   3. imgServerUrl----文件服务器地址
 4. 后端工程打成jar包运行
 5. 前端项目使用HBuilder打包成ipa/apk，在相应系统上运行。也可以用HBuilder运行到手机端或模拟器调试
 6. 首页登录和注册功能合并，未注册的用户名在键入后自动注册登录
