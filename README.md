@@ -26,6 +26,7 @@
 2. HTML5+
 3. AJAX
 4. WebSocket
+5. Image Cropper
 
 ### 后端
 
