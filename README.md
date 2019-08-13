@@ -4,6 +4,10 @@
 
 此工程为后端工程，前端工程参照：https://github.com/bydzjmx/EasyChat
 
+## 安卓版V1.0版
+欢迎扫码下载apk测试，或者到前端工程的releases中下载
+<img src="https://github.com/bydzjmx/EasyChat-App/blob/master/image/easychat%20v1.0.png">
+
 ## 功能说明
 
 聊天界面能够保存最近聊天的好友及快照。
